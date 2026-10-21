@@ -3,7 +3,7 @@
 while True:
 
     print("Por favor, insira três números diferentes:")
-    num1 = float(input("DIgite o primeiro número:"))
+    num1 = float(input("Digite o primeiro número:"))
     num2 = float(input("Digite o segundo número:"))
     num3 = float(input("Digite o terceiro número:"))
 
@@ -20,4 +20,3 @@ while True:
     else:
         print(f"O menor número é: {num3}")
         break
-    
