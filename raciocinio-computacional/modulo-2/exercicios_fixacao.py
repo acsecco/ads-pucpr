@@ -49,4 +49,44 @@ else:
     salario * 0.10
     print(f"Seu abono de fim de ano será de R${salario * 0.10}")
 
+print("------------------------------------------")
+
 # 5. Inserir turno de trabalho
+
+turno = input("Informe seu turno de trabalho seguindo a lista abaixo como referência:\nM - Manhã\nT - Tarde\nN - Noite\nInforme seu turno:")
+
+if turno == "M":
+    print("Bom dia!")
+elif turno == "T":
+    print("Boa tarde!")
+elif turno == "N":
+    print("Boa noite!")
+else:
+    print("Turno inválido.")
+
+print("------------------------------------------")
+
+# 6. Calculadora básica
+
+num1 = float(input("Insira o primeiro número: "))
+num2 = float(input("Insira o segundo número: "))
+op = input("Informe a operação a ser executada com esses valores (adição/subtração/multiplicação/divisão): ").lower()
+result = 0
+
+if op == "adição":
+    result = num1 + num2
+elif op == "subtração":
+    result = num1 - num2
+elif op == "multiplicação":
+    result = num1 * num2
+elif op == "divisão":
+    result = num1 / num2
+else:
+    op = "erro"
+if op == "erro":
+    print("Operação inválida!")
+else:
+    print(f"O resultado da operação {op} entre os valores {num1} e {num2} é: {result}")
+        
+print("------------------------------------------")
+
